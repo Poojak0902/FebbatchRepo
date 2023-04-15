@@ -44,6 +44,7 @@ public void sendkeysfeild(WebElement ele, String keys ) {
 	common.higlightelement(ele );
 	ele.clear();
 	ele.sendKeys(keys);
+	System.out.println("This is demo for git push");
 }
 
 public void click() {
