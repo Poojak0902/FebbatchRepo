@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="ValidPW" value="test@123"/>
+  <parameter name="inValidUN" value="1234@gmail.com"/>
+  <parameter name="ValidUN" value="xyz@gmai.com"/>
+  <parameter name="inValidPW" value="5328rdiuqr"/>
+  <parameter name="url" value="https://www.facebook.com/"/>
+  <test thread-count="5" name="CHTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.LoginTest">
+        <methods>
+          <include name="invalidUNinValidPW" invocation-numbers="0"/>
+          <include name="validateUN" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="invalidUNValidPW" invocation-numbers="0"/>
+          <include name="Beforeclass"/>
+          <include name="validateloginbutton"/>
+          <include name="afterSuite"/>
+          <include name="validUNinValidPW" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- test.LoginTest -->
+    </classes>
+  </test> <!-- CHTest(failed) -->
+  <test thread-count="5" name="FFTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="test.LoginTest">
+        <methods>
+          <include name="invalidUNinValidPW" invocation-numbers="0"/>
+          <include name="validateUN" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="invalidUNValidPW" invocation-numbers="0"/>
+          <include name="Beforeclass"/>
+          <include name="validateloginbutton"/>
+          <include name="afterSuite"/>
+          <include name="validUNinValidPW" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- test.LoginTest -->
+    </classes>
+  </test> <!-- FFTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
