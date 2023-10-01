@@ -53,5 +53,11 @@ public void click() {
 	loginButton.click();
 }
 
+public void click2() {
+	System.out.println("Adding new methods for git push");
+	common.higlightelement(loginButton);
+	common.waitforElement(loginButton);
+	loginButton.click();
+}
 
 }
